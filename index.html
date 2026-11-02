@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de contactos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="contenedor">
+        <header class="encabezado">
+            <span class="etiqueta">DIRECTORIO DIGITAL</span>
+            <h1>Lista de contactos</h1>
+            <p>Consulta los datos de nuestros usuarios.</p>
+        </header>
+
+        <section class="tarjeta">
+            <div class="barra-tabla">
+                <h2>Contactos registrados</h2>
+                <span id="contador">Cargando...</span>
+            </div>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Teléfono</th>
+                            <th>Empresa</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="lista-contactos">
+                        <tr>
+                            <td colspan="4" class="mensaje">
+                                Cargando contactos...
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p id="estado" class="estado" aria-live="polite">
+                Conectando con el servidor...
+            </p>
+        </section>
+
+        <footer>
+            Proyecto desarrollado con HTML, CSS y JavaScript
+        </footer>
+    </main>
+
+</body>
+</html>
